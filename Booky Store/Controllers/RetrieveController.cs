@@ -55,7 +55,7 @@ namespace Booky_Store.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Add(ApplicationUserBook AddedBook)
+        public async Task<IActionResult> Add(ApplicationUserBook AddedBook)
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
 
@@ -65,6 +65,7 @@ namespace Booky_Store.Controllers
             var userId = user.Value;
             ApplicationUser MyUser = _context.Users.Find(userId);
             if (MyUser == null) return NotFound("No User found");
+            
 
             Book book;
             book = new Book
@@ -73,12 +74,24 @@ namespace Booky_Store.Controllers
                 AuthorName=AddedBook.Book.AuthorName,
                 BookImage=AddedBook.Book.BookImage,
                 Name=AddedBook.Book.Name,
-                
             };
+            if (Request.Form.Files.Count > 0)
+            {
+                var file = Request.Form.Files.FirstOrDefault();
+                using (var datastream = new MemoryStream())
+                {
+                    await file.CopyToAsync(datastream);
+                    book.BookImage=datastream.ToArray();
+                }
+            }
+            if(book.Name is null || book.AuthorName is null || book.BookImage is null)
+            {
+                return BadRequest("Wrong input");
+            }
             _context.books.Add(book);
             _context.SaveChanges();
 
-            return RedirectToAction("Index"); 
+            return RedirectToAction("Index");
         }
 
     }

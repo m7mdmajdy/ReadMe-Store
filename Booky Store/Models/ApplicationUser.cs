@@ -7,10 +7,10 @@ namespace Booky_Store.Models
 {
     public class  ApplicationUser : IdentityUser
     {
-        [Required,MaxLength(100)]
+        [Required,MaxLength(100),Display(Name ="First Name")]
         public string FirstName { get; set; }
 
-        [Required,MaxLength(100)]
+        [Required,MaxLength(100), Display(Name = "Last Name")]
         public string LastName { get; set; }
 
         public byte[]? ProfilePicture { get; set; }

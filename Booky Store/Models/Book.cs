@@ -9,8 +9,8 @@ namespace Booky_Store.Models
         public string Name { get; set; }
         [Display(Name = "Author Name"), MaxLength(100)]
         public string  AuthorName { get; set; }
-        public byte[]? BookImage { get; set; }
-        [Display(Name = "Book Seller")]
+        [Display(Name="Book Image")]
+        public byte[] BookImage { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
 
     }
