@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Book>
+
+@{
+    ViewData["title"] = "Find a book";
+}
+
+<h1>
+    Find a book
+</h1>
+@if (User.Identity.IsAuthenticated)
+{
+<a class="btn btn-primary" asp-action="Add">
+    Add your book
+</a>
+}
+else{
+    <h3>You must login to offer your books</h3>
+}
+
+<table class="table">
+    <tbody>
+        @foreach(var x in Model){
+            <tr>
+                <div>
+                <td>
+                    <div>
+                        <a href="https://www.google.com"><img src="~/css/book1.jpg"></a>
+                    </div>
+                    Book Name: @x.Name<br>
+                    Seller Name: @x.ApplicationUser.UserName<br>
+                    Contact: @x.ApplicationUser.PhoneNumber
+                    <br>
+                    <button class="btn btn-primary">Details</button>
+                </td>
+                </div>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+@*@for(int i=0;i<10;i++){
+            <tr>
+                @for(int j=0;j<3;j++){
+                    <div>
+                    <td>
+                        <div>
+                            <a href="https://www.google.com"><img src="~/css/book1.jpg"></a>
+                        </div>
+                        Book Name<br>
+                        Book Seller<br>
+                        <button class="btn btn-primary">Details</button>
+                    </td>
+                    </div>
+                }
+            </tr>
+        }*@

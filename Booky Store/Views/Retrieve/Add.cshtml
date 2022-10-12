@@ -1,0 +1,27 @@
+﻿@model ApplicationUserBook
+
+@{
+	ViewData["title"] = "Add Book";
+}
+
+<form asp-action="Add" method="post">
+	<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+	<label asp-for="@Model.Book.Name"></label>
+	<input asp-for="@Model.Book.Name" />
+	<span asp-validation-for="@Model.Book.Name" class="text-danger"></span>
+	<br />
+	<label asp-for="@Model.Book.AuthorName"></label>
+	<input asp-for="@Model.Book.AuthorName" />
+	<span asp-validation-for="@Model.Book.AuthorName" class="text-danger"></span>
+	<br />
+	<label asp-for="@Model.ApplicationUser.UserName"></label>
+	<input asp-for="@Model.ApplicationUser.UserName" value="@Model.ApplicationUser.UserName" disabled />
+	<span asp-validation-for="@Model.ApplicationUser.UserName" class="text-danger"></span>
+	<br />
+	<label asp-for="@Model.ApplicationUser.PhoneNumber"></label>
+	<input asp-for="@Model.ApplicationUser.PhoneNumber" value="@Model.ApplicationUser.PhoneNumber" disabled />
+	<span asp-validation-for="@Model.ApplicationUser.PhoneNumber" class="text-danger"></span>
+	<br />
+	<button type="submit" class="btn btn-primary">Add</button>
+
+</form>

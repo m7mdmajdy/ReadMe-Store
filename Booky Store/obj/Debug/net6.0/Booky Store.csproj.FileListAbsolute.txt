@@ -270,3 +270,27 @@ C:\Users\DELL\source\repos\Booky Store\Booky Store\obj\Debug\net6.0\refint\Booky
 C:\Users\DELL\source\repos\Booky Store\Booky Store\obj\Debug\net6.0\Booky Store.pdb
 C:\Users\DELL\source\repos\Booky Store\Booky Store\obj\Debug\net6.0\Booky Store.genruntimeconfig.cache
 C:\Users\DELL\source\repos\Booky Store\Booky Store\obj\Debug\net6.0\ref\Booky Store.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\JetBrains.Annotations.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Microsoft.Extensions.Localization.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nito.AsyncEx.Context.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nito.AsyncEx.Coordination.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nito.AsyncEx.Tasks.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nito.Collections.Deque.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nito.Disposables.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Volo.Abp.Core.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Volo.Abp.Security.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Autofac.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\MediatR.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nobisoft.Core.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nobisoft.Core.Domain.dll
+C:\Users\DELL\source\repos\Booky Store\Booky Store\bin\Debug\net6.0\Nobisoft.Core.HttpContextAccessor.dll

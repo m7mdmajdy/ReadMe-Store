@@ -127,6 +127,7 @@ namespace Booky_Store.Areas.Identity.Pages.Account
                     FirstName=Input.FirstName,
                     LastName=Input.LastName,
                     Email=Input.Email,
+                    PhoneNumber=Input.PhoneNumber,
                 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
 

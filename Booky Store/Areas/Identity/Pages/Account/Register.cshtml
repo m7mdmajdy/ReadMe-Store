@@ -49,7 +49,8 @@
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
             </div>
             <br />
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+            <button id="registerSubmit" type="submit" class="w-30 btn btn-primary">Register</button>
+            <a asp-controller="Home" asp-action="Index" class="w-30 btn btn-secondary">Back</a>
             <br />
             <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Already Have account? Login</a>
         </form>

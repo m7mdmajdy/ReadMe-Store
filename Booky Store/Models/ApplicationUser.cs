@@ -5,7 +5,7 @@ using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribut
 
 namespace Booky_Store.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class  ApplicationUser : IdentityUser
     {
         [Required,MaxLength(100)]
         public string FirstName { get; set; }
@@ -14,5 +14,6 @@ namespace Booky_Store.Models
         public string LastName { get; set; }
 
         public byte[]? ProfilePicture { get; set; }
+        public List<Book>? Books { get; set; }
     }
 }

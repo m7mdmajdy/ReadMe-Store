@@ -4,25 +4,25 @@
 
 namespace Booky_Store.Data.Migrations
 {
-    public partial class IgonreUsername : Migration
+    public partial class RemovePhoneNumberColumnFromBookTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "UserName",
+                name: "PhoneNumber",
                 schema: "Security",
-                table: "Users");
+                table: "Books");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "UserName",
+                name: "PhoneNumber",
                 schema: "Security",
-                table: "Users",
-                type: "nvarchar(256)",
-                maxLength: 256,
-                nullable: true);
+                table: "Books",
+                type: "nvarchar(max)",
+                nullable: false,
+                defaultValue: "");
         }
     }
 }

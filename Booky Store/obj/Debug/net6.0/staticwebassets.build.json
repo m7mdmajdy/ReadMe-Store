@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kAWM+K0+3nPsI0apYkU9zgP40iJqsVxeQBA07N1gVWI=",
+  "Hash": "yweeN6TTstxx6b8FD01QtRYd00a22IGdaY9hi0iTWbw=",
   "Source": "Booky Store",
   "BasePath": "_content/Booky Store",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Booky Store.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\wwwroot\\css\\book1.jpg",
+      "SourceId": "Booky Store",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\wwwroot\\",
+      "BasePath": "_content/Booky Store",
+      "RelativePath": "css/book1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\book1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\wwwroot\\css\\site.css",
       "SourceId": "Booky Store",
       "SourceType": "Discovered",
@@ -1103,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\wwwroot\\images\\book1.jpg",
+      "SourceId": "Booky Store",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\wwwroot\\",
+      "BasePath": "_content/Booky Store",
+      "RelativePath": "images/book1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\book1.jpg"
     },
     {
       "Identity": "C:\\Users\\DELL\\source\\repos\\Booky Store\\Booky Store\\wwwroot\\js\\site.js",

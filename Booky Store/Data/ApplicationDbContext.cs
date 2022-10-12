@@ -22,7 +22,13 @@ namespace Booky_Store.Data
             builder.Entity<IdentityUserClaim<string>>().ToTable("UserClaims", "Security");
             builder.Entity<IdentityUserLogin<string>>().ToTable("UserLogins", "Security");
             builder.Entity<IdentityUserToken<string>>().ToTable("UserTokens", "Security");
+            builder.Entity<Book>().ToTable("Books", "Security");
+
+            
+            
+
 
         }
+        public DbSet<Book> books { get; set; }
     }
 }
