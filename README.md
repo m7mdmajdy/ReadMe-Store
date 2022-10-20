@@ -1,5 +1,5 @@
 # ReadMe-Store
-### Bulky Store: Simple project for creating, editing, and deleting categories.
+### ReadMe-Store is a website through it you can sell your book to other users and also you can find books that offered by users 
 ### Technologies used: <br>
 &emsp;&emsp;o Front-end (HTML, CSS, Bootstrap) <br>
 &emsp;&emsp;o .Net core 6 MVC<br>
