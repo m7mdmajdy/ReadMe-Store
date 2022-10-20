@@ -1,0 +1,24 @@
+﻿@model Book
+
+@{
+	ViewData["title"] = "Details";
+}
+
+
+<div>
+	<label>
+		<img src="data:image/*;base64,@(Convert.ToBase64String(Model.BookImage))" alt="Book Image" width="400" height="400"/><br />
+		Book Name: @Model.Name <br />
+		Author Name: @Model.AuthorName<br />
+
+		Seller: @Model.ApplicationUser.FirstName
+		@Model.ApplicationUser.LastName<br />
+		Contact Information:<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;@Model.ApplicationUser.Email <br />
+		&nbsp;&nbsp;&nbsp;&nbsp; @Model.ApplicationUser.PhoneNumber<br />
+
+		@if(User.IsInRole("Admin")){
+			<a asp-controller="Retrieve" asp-action="RemoveBook" asp-route-id="@Model.Id" class="btn btn-primary">Remove</a>
+		}
+	</label>
+</div>

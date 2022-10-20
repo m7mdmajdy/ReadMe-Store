@@ -75,7 +75,6 @@ namespace Booky_Store.Controllers
                     await _userManager.AddToRoleAsync(user,x.Name);
             }
             return RedirectToAction(nameof(Index));
-
         }
     }
 }

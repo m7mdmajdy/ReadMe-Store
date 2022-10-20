@@ -93,7 +93,22 @@ namespace Booky_Store.Controllers
 
             return RedirectToAction("Index");
         }
+        public  IActionResult BookDetails(int id)
+        {
+            Book RetrivedBook =  _context.books.Include(m=>m.ApplicationUser).FirstOrDefault(x=>x.Id==id);
 
+            if (RetrivedBook == null) return NotFound();
+            return View(RetrivedBook);
+        }
+        public IActionResult RemoveBook(int id)
+        {
+            var book = _context.books.FirstOrDefault(x=>x.Id==id);
+            if(book==null) return NotFound();
+
+            _context.books.Remove(book);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
 
