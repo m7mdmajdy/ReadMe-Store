@@ -4,6 +4,9 @@
 }
 <h3>Users</h3>
 
+<h5>Num of Users: @{
+		UserCounter userCounter=@UserCounter.GetInstance();
+	}@userCounter.count.ToString()</h5>
 <table class="table table-striped mt-4">
 	<thead>
 		<tr class="bg-primary text-white">

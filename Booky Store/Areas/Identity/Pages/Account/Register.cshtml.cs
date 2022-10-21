@@ -12,6 +12,7 @@ using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
 using Booky_Store.Models;
+using Booky_Store.Patterns.Singleton;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -133,6 +134,9 @@ namespace Booky_Store.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
+                    UserCounter userCounter = UserCounter.GetInstance();
+                    userCounter.AddOne();
+
                     _logger.LogInformation("User created a new account with password.");
                     await _userManager.AddToRoleAsync(user, "User");
                     var userId = await _userManager.GetUserIdAsync(user);
