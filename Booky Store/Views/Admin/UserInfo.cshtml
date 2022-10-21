@@ -1,0 +1,38 @@
+﻿@model ApplicationUser
+@{
+	ViewData["title"] = "User Information";
+}
+
+<table class="table table-striped mt-4">
+	
+	<tbody>
+		<tr>
+			<td>First Name: </td>
+			<td>@Model.FirstName</td>
+		</tr
+		<tr>
+			<td>Last Name: </td>
+			<td>@Model.LastName</td>
+		</tr
+		<tr>
+			<td>Email: </td>
+			<td>@Model.Email</td>
+		</tr
+		<tr>
+			<td>Phone Number: </td>
+			<td>@Model.PhoneNumber</td>
+		</tr
+		<tr>
+			<td>Books offered: </td>
+			<td>
+				@{
+				foreach(var x in Model.Books){
+					@String.Concat(x.Name,", ")
+				}
+			}
+			</td>
+		</tr
+	</tbody>
+</table>
+<a class="btn btn-primary" asp-controller="Admin"  asp-route-userId="@Model.Id" asp-action="DeleteUser">Delete User</a>
+<a class="btn btn-secondary" asp-controller="Admin" asp-action="Index">Back</a>

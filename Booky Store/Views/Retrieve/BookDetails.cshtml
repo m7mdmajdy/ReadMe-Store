@@ -16,9 +16,11 @@
 		Contact Information:<br />
 		&nbsp;&nbsp;&nbsp;&nbsp;@Model.ApplicationUser.Email <br />
 		&nbsp;&nbsp;&nbsp;&nbsp; @Model.ApplicationUser.PhoneNumber<br />
-
+		
+		<a asp-controller="Retrieve" asp-action="Index" class="btn btn-primary">Back</a>
+		
 		@if(User.IsInRole("Admin")){
-			<a asp-controller="Retrieve" asp-action="RemoveBook" asp-route-id="@Model.Id" class="btn btn-primary">Remove</a>
+			<a asp-controller="Retrieve" asp-action="RemoveBook" asp-route-id="@Model.Id" class="btn btn-secondary">Remove</a>
 		}
 	</label>
 </div>

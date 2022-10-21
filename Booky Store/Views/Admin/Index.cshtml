@@ -25,7 +25,10 @@
 				<td>@user.Email</td>
 				<td>@string.Join(", ",user.Roles.ToList())</td>
 				<td>
-					<a class="btn btn-primary" asp-controller="Admin" asp-action="ManageRoles" asp-route-userId="@user.Id">Manage user</a>
+					<a class="btn btn-primary" asp-controller="Admin" asp-action="ManageRoles" asp-route-userId="@user.Id">Manage user Roles</a>
+				</td>
+				<td>
+					<a class="btn btn-primary" asp-controller="Admin" asp-action="UserInfo" asp-route-userId="@user.Id">User Information</a>
 				</td>
 			</tr>
 		}

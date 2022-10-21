@@ -76,5 +76,19 @@ namespace Booky_Store.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> UserInfo(string userId)
+        {
+            var user=await _context.Users.Include(m=>m.Books).FirstOrDefaultAsync(m=>m.Id==userId);
+            if(user==null) return NotFound();
+            return View(user);
+        }
+        public async Task<IActionResult> DeleteUser(string userId)
+        {
+            var user=await _context.Users.FirstOrDefaultAsync(m=>m.Id==userId);
+            if (user == null) return NotFound();
+            await _userManager.DeleteAsync(user);
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
