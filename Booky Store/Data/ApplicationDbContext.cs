@@ -24,11 +24,6 @@ namespace Booky_Store.Data
             builder.Entity<IdentityUserToken<string>>().ToTable("UserTokens", "Security");
             builder.Entity<Book>().ToTable("Books", "Security");
 
-            builder.Entity<ApplicationUser>()
-                .HasMany(m=>m.Books)
-                .WithOne()
-                .OnDelete(DeleteBehavior.Cascade);
-            
 
 
         }

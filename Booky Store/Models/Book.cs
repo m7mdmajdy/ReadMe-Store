@@ -11,6 +11,7 @@ namespace Booky_Store.Models
         public string  AuthorName { get; set; }
         [Display(Name="Book Image")]
         public byte[] BookImage { get; set; }
+        [Required]
         public ApplicationUser ApplicationUser { get; set; }
 
     }
